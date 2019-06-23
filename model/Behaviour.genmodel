@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    modelDirectory="/edu.kit.sdq.mosim.Behaviour/src-gen" creationIcons="false"
-    editDirectory="/edu.kit.sdq.mosim.Behaviour.edit/src-gen" editorDirectory="/edu.kit.sdq.mosim.Behaviour.editor/src-gen"
-    modelPluginID="edu.kit.sdq.mosim.Behaviour" modelName="Behaviour" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
-    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
-    copyrightFields="false" usedGenPackages="#//identifier" operationReflection="true"
-    importOrganizing="true">
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/Simulation-Behaviour-Description/src" modelPluginID="Simulation-Behaviour-Description"
+    modelName="Behaviour" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="10.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
   <foreignModel>Behaviour.ecore</foreignModel>
-  <testsDirectory xsi:nil="true"/>
-  <genPackages prefix="Behaviour" basePackage="edu.kit.sdq.mosim" disposableProviderFactory="true"
-      ecorePackage="Behaviour.ecore#/">
+  <genPackages prefix="Behaviour" disposableProviderFactory="true" ecorePackage="Behaviour.ecore#/">
     <genClasses image="false" ecoreClass="Behaviour.ecore#//Place">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Place/token"/>
     </genClasses>
@@ -30,7 +25,7 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//DefaultPlace/preTransitions"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//DefaultPlace/postTransitions"/>
     </genClasses>
-    <genClasses ecoreClass="Behaviour.ecore#//QueuePlace">
+    <genClasses image="false" ecoreClass="Behaviour.ecore#//QueuePlace">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//QueuePlace/server"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//QueuePlace/waitingLine"/>
     </genClasses>
@@ -72,7 +67,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Behaviour.ecore#//Colour/attribute"/>
     </genClasses>
   </genPackages>
-  <genPackages prefix="Identifier" ecorePackage="identifier.ecore#/">
+  <genPackages prefix="Identifier" disposableProviderFactory="true" ecorePackage="identifier.ecore#/">
     <genClasses image="false" ecoreClass="identifier.ecore#//Identifier">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute identifier.ecore#//Identifier/id"/>
     </genClasses>

@@ -4,8 +4,8 @@
     <semanticResources>platform:/plugin/de.uka.ipd.sdq.identifier/model/identifier.ecore</semanticResources>
     <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
     <semanticResources>Behaviour.ecore</semanticResources>
-    <semanticResources>Behaviour.genmodel</semanticResources>
     <semanticResources>identifier.ecore</semanticResources>
+    <semanticResources>Behaviour.genmodel</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_t_pZIEruEem42fRCQEq-PQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_uAMyxUruEem42fRCQEq-PQ" name="Behaviour" repPath="#_uAMywEruEem42fRCQEq-PQ">
