@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/edu.kit.sdq.mosim.Behaviour/src-gen" creationIcons="false"
+    editDirectory="/edu.kit.sdq.mosim.Behaviour.edit/src-gen" editorDirectory="/edu.kit.sdq.mosim.Behaviour.editor/src-gen"
+    modelPluginID="edu.kit.sdq.mosim.Behaviour" modelName="Behaviour" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0"
+    copyrightFields="false" usedGenPackages="#//identifier" operationReflection="true"
+    importOrganizing="true">
+  <foreignModel>Behaviour.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Behaviour" basePackage="edu.kit.sdq.mosim" disposableProviderFactory="true"
+      ecorePackage="Behaviour.ecore#/">
+    <genClasses image="false" ecoreClass="Behaviour.ecore#//Place">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Place/token"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Behaviour.ecore#//Transition">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Transition/outgoingEdges"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Transition/incommingEdges"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="Behaviour.ecore#//Connection">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Connection/place"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Connection/transition"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//PostTransitionConnection"/>
+    <genClasses ecoreClass="Behaviour.ecore#//PreTransitionConnection">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Behaviour.ecore#//PreTransitionConnection/requiredTokenAmount"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//DefaultPlace">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//DefaultPlace/preTransitions"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//DefaultPlace/postTransitions"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//QueuePlace">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//QueuePlace/server"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//QueuePlace/waitingLine"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//StartPlace">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//StartPlace/preTransitions"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Behaviour.ecore#//StartPlace/spawnPolicy"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//ConditionalTransition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//ConditionalTransition/transitionFunction"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//StochasticTransition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//StochasticTransition/transitionFunction"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//Server">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Server/waitingLine"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Server/preTransition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Behaviour.ecore#//Server/capacity"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//WaitingLine">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//WaitingLine/server"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Behaviour.ecore#//WaitingLine/schedulingPolicy"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//WaitingLine/postTransitions"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//Token">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Token/attributes"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//Description">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Description/arrows"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Description/place"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Description/transition"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//Description/token"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//TransitionFunction">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Behaviour.ecore#//TransitionFunction/transitionFunction"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Behaviour.ecore#//TransitionFunction/transitionConnection"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Behaviour.ecore#//TransitionFunction/emittedToken"/>
+    </genClasses>
+    <genClasses ecoreClass="Behaviour.ecore#//Colour">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Behaviour.ecore#//Colour/attribute"/>
+    </genClasses>
+  </genPackages>
+  <genPackages prefix="Identifier" ecorePackage="identifier.ecore#/">
+    <genClasses image="false" ecoreClass="identifier.ecore#//Identifier">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute identifier.ecore#//Identifier/id"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
